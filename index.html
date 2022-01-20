@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rak Buku</title>
+</head>
+
+<body>
+    <div id="header">
+        APLIKASI RAK BUKU
+    </div>
+    <div id="main">
+        <div id="left">
+            <div class="box">
+                <h2>MASUKKAN BUKU</h2>
+                <div id="masukkan-buku">
+                    <form>
+                        <label>Judul</label>
+                        <input type="text" class="stylInput" name="judul">
+                        <label>Penulis</label>
+                        <input type="text" class="stylInput" name="penulis">
+                        <label>Tahun</label>
+                        <input type="number" class="stylInput" name="tahunTerbit">
+                        <label>Sudah Dibaca?</label>
+                        <input type="checkbox" id="checkboxStyle" name="sudahDibaca">
+                        <button type="button" onclick="inputBuku()">Masukkan Buku</button>
+                    </form>
+                </div>
+            </div>
+            <div class="box">
+                <h2>BELUM SELESAI DIBACA</h2>
+                <table style="text-align: left;" id="dataBelumDibaca">
+                    
+                </table>
+            </div>
+            <div class="box">
+                <h2>SUDAH SELESAI DIBACA</h2>
+                <table style="text-align: left;" id="dataSudahDibaca">
+                    
+                </table>
+            </div>
+        </div>
+        <div id="right">
+            <div class="box">
+                <h2>PENCARIAN</h2>
+                <form>
+                    <label>Kata Kunci</label>
+                    <input type="text" id="stylInputSearch" autocomplete="off">
+                    <button type="button" onclick="pencarianBuku()">Cari Sekarang</button>
+                </form>
+            </div>
+            <div class="box result-cari">
+                <h2>HASIL PENCARIAN</h2>
+                <table style="text-align: left;" id="pencarianBukuData">
+
+                </table>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <h3>Hak Cipta &copy Wahyu Rahmana</h3>
+    </div>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
